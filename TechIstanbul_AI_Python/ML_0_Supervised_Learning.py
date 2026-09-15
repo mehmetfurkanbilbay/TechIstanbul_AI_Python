@@ -24,19 +24,6 @@ bu bilgilere bakarak sınavı geçip geçmeyeceğini tahmin edelim.
 Label:
     0 : Kaldı
     1 : Geçti
-<<<<<<< HEAD
-
-Kullanılan algoritma:
-    Logistic Regression  
-
-
-Kurulum:
-    pip install numpy scikit-learn
-    python -c "import numpy; import sklearn; print('Kurulum başarılı')"
-
-    python -m pip install -r requirements.txt
-
-=======
     
 Kullanılan algoritma:
     Logistic Regression  
@@ -48,7 +35,6 @@ Kurulum:
     
     python -m pip install -r requirements.txt
     
->>>>>>> 7871747ef81c960bf7d2713fb44745c1dccf95f2
     -m → module
     -c → command
 """
@@ -56,10 +42,6 @@ Kurulum:
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 7871747ef81c960bf7d2713fb44745c1dccf95f2
 def main():
     #  X(Features/Özellikler) --> MODEL --> y (Label/Etiketler)
     #  1= Günlük çalışma saati
@@ -102,10 +84,7 @@ def main():
     print("\ny - Label(Etiketler)")
     print(y)
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 7871747ef81c960bf7d2713fb44745c1dccf95f2
     # Model Oluşturma
     """
      LogisticRegression bir sınıflandırma algoritmasıdır
@@ -115,20 +94,12 @@ def main():
      LogisticRegression, iki veya daha fazla sınıfın hangisine ait olduğunu tahmit etmek için kullanılan sınıfın algoritmasıdır
     """
 
-<<<<<<< HEAD
-    model = LogisticRegression()
-=======
     model =LogisticRegression()
->>>>>>> 7871747ef81c960bf7d2713fb44745c1dccf95f2
 
     # Modeli Eğitim
     # Model hem özellikleri hemde dorğu cevpları görsün
     # Bu ilişkide çalışma saati + Katılım oranı --> Geçti/Kaldı
-<<<<<<< HEAD
-    model.fit(x, y)
-=======
     model.fit(x,y)
->>>>>>> 7871747ef81c960bf7d2713fb44745c1dccf95f2
 
     # Instance
     # Örnek: Öğrenci 6 saat çalışıyor, Derse katılım %80
@@ -148,11 +119,7 @@ def main():
     print("\nModel tahmini:", prediction)
 
     # Conditional
-<<<<<<< HEAD
-    if prediction == 1:
-=======
     if prediction ==1:
->>>>>>> 7871747ef81c960bf7d2713fb44745c1dccf95f2
         print("Sonuç: Öğrencinin GEÇMESİ bekleniyor")
     else:
         print("Sonuç: Öğrencinin KALMASI bekleniyor")
@@ -166,18 +133,10 @@ def main():
     print("Supervised Learning LABEL vardır")
     print("Unutmaaaa:  Model, geçmişteki doğru cevapları öğrenir ve")
     print("Bu örnekte labek:0=Kaldı, 1=Geçti")
-<<<<<<< HEAD
-    print("\n Ağırlıkları: ", model.coef_)
-    print("\n Bias: ", model.intercept_)
-
-
-if __name__ == "__main__":
-=======
     print("\n Ağırlıkları: ",model.coef_)
     print("\n Bias: ",model.intercept_)
 
 if __name__== "__main__":
->>>>>>> 7871747ef81c960bf7d2713fb44745c1dccf95f2
     main()
 
 """
