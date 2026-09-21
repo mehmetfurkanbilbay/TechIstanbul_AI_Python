@@ -14,3 +14,8 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+import pandas as pd
+
+df = pd.read_csv("ornek_email_spam.csv")
+
+print(df)
